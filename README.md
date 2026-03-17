@@ -6,7 +6,7 @@ Final etkinlik sunumu: [Canva Link](https://www.canva.com/design/DAHDtlUSca8/5tk
 
 ---
 
-## 🎯 Problem
+## Problem
 
 Tekstil boyama proseslerinde kazan seviye değerlerini (`bk_level`) önceden tahmin ederek üretim planlamasını optimize etmek.
 
@@ -16,7 +16,7 @@ Tekstil boyama proseslerinde kazan seviye değerlerini (`bk_level`) önceden tah
 
 ---
 
-## 🚀 Çözüm Özeti
+## Çözüm Özeti
 
 ### 1 — Veri Dönüşümü: Satır → Blok
 Ham saniyelik veriyi **blok aggregasyonu** ile özetledik:
@@ -46,7 +46,7 @@ Proses başında lag=0 → model kör.
 
 ---
 
-## 📊 Sonuçlar
+## Sonuçlar
 
 | Komut | wMAE | Blok | Satır | Veri Payı |
 |-------|------|------|-------|-----------|
@@ -62,11 +62,11 @@ Proses başında lag=0 → model kör.
 
 ## 💡 Öğrendiklerim
 
-✅ Warmup lookup ile cold start çözüldü  
-✅ CatBoost kategorik özellikler için baskın  
-✅ Temporal fold sızıntı engelledi  
-✅ wMAE > MAE (blok boyutu önemli)  
-✅ Az veri segmentleri risk yaratıyor  
-⚠️ Blok aggregation hız kazandırdı ama saniye hassasiyeti kaybettirdi
+ Warmup lookup ile cold start çözüldü  
+ CatBoost kategorik özellikler için baskın  
+ Temporal fold sızıntı engelledi  
+ wMAE > MAE (blok boyutu önemli)  
+ Az veri segmentleri risk yaratıyor  
+ Blok aggregation hız kazandırdı ama saniye hassasiyeti kaybettirdi
 
 ---
