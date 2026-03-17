@@ -1,4 +1,4 @@
-# 🏆 Hacettepe AI Club Datathon 2026 - 6th Place Solution
+# Hacettepe AI Club Datathon 2026 - 6th Place Solution
 
 **Textile Dyeing Process Level Prediction with Temporal Stacking**
 
